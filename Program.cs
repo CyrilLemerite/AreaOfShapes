@@ -7,6 +7,8 @@ double length;
 double breadth;
 const double pi =  3.142;
 double radius;
+double hieght;
+double bases;
 
 
 Console.Clear();
@@ -45,6 +47,16 @@ switch (option)
     area = shape.RectangleArea(length, breadth);
     Console.WriteLine(area);
     break;
+
+    case 3:
+    Console.Write("Inpute Height: ");
+    hieght = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Inpute Bases: ");
+    bases = Convert.ToDouble(Console.ReadLine());
+    area = shape.TriangleArea(hieght, bases);
+    Console.WriteLine(area);
+    break;
+
 }
 
 //Area area = new Area();
@@ -72,10 +84,13 @@ public class Shape{
         return aSquare;
     }
     
-    public double TriangleArea()
+    public double TriangleArea(double h, double b)
     {
-
+        double hieght = h;
+        double bases = b;
         double aTriangle = 0;
+
+        aTriangle = (bases * hieght)/2;
    
         return aTriangle;
     }
