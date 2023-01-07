@@ -29,7 +29,12 @@ option = Convert.ToInt32(Console.ReadLine());
 switch (option)
 {
     case 1:
-    area = shape.CircleArea();
+    Console.Write("Input Radius: ");
+    radius = Convert.ToDouble(Console.ReadLine());
+    
+    area = shape.CircleArea(radius, pi);
+    Console.WriteLine("Area of Circle: " + area);
+    Console.WriteLine(area);
     break;
 
     case 2:
@@ -51,11 +56,11 @@ switch (option)
 
 public class Shape{
     
-    public double CircleArea()
+    public double CircleArea(double radius, double pi)
     {
 
         double aCircle = 0;
-   
+        aCircle = pi * Math.Pow(radius, 2) ;
         return aCircle;
     }
 
