@@ -45,7 +45,7 @@ switch (option)
     Console.Write("Input Breadth: ");
     breadth = Convert.ToDouble(Console.ReadLine());
     area = shape.RectangleArea(length, breadth);
-    Console.WriteLine(area);
+    Console.WriteLine("Area of Rectangle: " + area);
     break;
 
     case 3:
@@ -54,7 +54,7 @@ switch (option)
     Console.Write("Inpute Bases: ");
     bases = Convert.ToDouble(Console.ReadLine());
     area = shape.TriangleArea(hieght, bases);
-    Console.WriteLine(area);
+    Console.WriteLine("Area of Triangle: " + area);
     break;
 
 }
