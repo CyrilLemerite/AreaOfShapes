@@ -26,6 +26,15 @@ switch (option)
     case 1:
     area = shape.CircleArea();
     break;
+
+    case 2:
+    area = shape.RectangleArea();
+    break;
+
+    case 3:
+    area = shape.CircleArea();
+    break;
+
 }
 
 //Area area = new Area();
