@@ -3,6 +3,11 @@
 int option;
 Shape shape = new Shape();
 double area = 0;
+double length;
+double breadth;
+const double pi =  3.142;
+double radius;
+
 
 Console.Clear();
 Console.WriteLine("***********************************");
@@ -25,6 +30,15 @@ switch (option)
 {
     case 1:
     area = shape.CircleArea();
+    break;
+
+    case 2:
+    Console.Write("Input Length: ");
+    length = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Input Breadth: ");
+    breadth = Convert.ToDouble(Console.ReadLine());
+    area = shape.RectangleArea(length, breadth);
+    Console.WriteLine(area);
     break;
 }
 
