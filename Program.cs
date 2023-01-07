@@ -48,16 +48,11 @@ switch (option)
     Console.WriteLine("Area of Rectangle: " + area);
     break;
 
-    case 3:
-    Console.Write("Inpute Height: ");
-    hieght = Convert.ToDouble(Console.ReadLine());
-    Console.Write("Inpute Bases: ");
-    bases = Convert.ToDouble(Console.ReadLine());
-    area = shape.TriangleArea(hieght, bases);
-    Console.WriteLine("Area of Triangle: " + area);
-    break;
+
+    
 
 }
+
 
 //Area area = new Area();
 //double answer = area.Rectangle(2,2);
